@@ -84,8 +84,8 @@ export const HeroSection = (props) => {
                       className="hero-buttons"
                     >
                       {item.buttons.map((button, idx) => (
-                        <Link href={`tel:${button.url}`}>
-                          <a key={idx} className="button hero__button">
+                        <Link key={idx} href={`tel:${button.url}`}>
+                          <a className="button hero__button">
                             <span>{button.label}</span>
                           </a>
                         </Link>
