@@ -1,0 +1,15 @@
+type: object
+name: HeroSection
+label: Hero
+labelField: heading
+groups:
+  - sectionComponent
+fields:
+  - type: string
+    name: img
+    label: Hero Image
+  - type: list
+    name: HeroBranch
+    items:
+      type: model
+      models: [HeroBranch]

@@ -1,0 +1,67 @@
+type: object
+name: FooterConfig
+label: Footer Config
+labelField: footerBody
+fields:
+  - type: list
+    name: footerLogo
+    label: Footer Logo
+    items:
+      type: model
+      models:
+        - Link
+  - type: markdown
+    name: description
+    label: Footer Description
+  - type: list
+    name: icons
+    label: Footer Icons
+    items:
+      type: model
+      models:
+        - Link
+    default:
+      - type: Link
+        label: Home
+        url: /
+        altText: Home
+  - type: string
+    name: listOneTitle
+    label: Links Title
+  - type: list
+    name: listOne
+    label: Important Links
+    items:
+      type: model
+      models:
+        - Link
+    default:
+      - type: Link
+        label: Home
+        url: /
+        altText: Home
+  - type: string
+    name: listTwoTitle
+    label: Services Title
+  - type: list
+    name: listTwo
+    label: Services
+    items:
+      type: model
+      models:
+        - Link
+    default:
+      - type: Link
+        label: Home
+        url: /
+        altText: Home
+  - type: string
+    name: listThreeTitle
+    label: Contact Title
+  - type: list
+    name: listThree
+    label: Contacts
+    items:
+      type: model
+      models:
+        - Contact

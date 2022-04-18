@@ -1,0 +1,179 @@
+{
+  "type": "SiteConfig",
+  "title": "oasis clinics",
+  "header": {
+    "title": "Starter",
+    "type": "HeaderConfig",
+    "isTitleVisible": true,
+    "headerLogo": [
+      {
+        "type": "Link",
+        "label": "Header Logo",
+        "url": "/images/logo.png",
+        "altText": "Header Image"
+      }
+    ],
+    "primaryLinks": [
+      {
+        "type": "Link",
+        "label": "Home",
+        "url": "/",
+        "altText": "Home"
+      },
+      {
+        "type": "Link",
+        "label": "About Us",
+        "url": "/about-us",
+        "altText": "About"
+      },
+      {
+        "type": "Link",
+        "label": "Services",
+        "url": "/services",
+        "altText": "Service"
+      },
+      {
+        "type": "Link",
+        "label": "Clinics",
+        "url": "/clinics",
+        "altText": "Clinics"
+      },
+      {
+        "type": "Link",
+        "label": "Doctors",
+        "url": "/doctors",
+        "altText": "Doctors"
+      },
+      {
+        "type": "Link",
+        "label": "Health Tips",
+        "url": "/health-tips",
+        "altText": "Health Tips"
+      },
+      {
+        "type": "Link",
+        "label": "Contact Us",
+        "url": "/contact-us",
+        "altText": "Contact Us"
+      },
+      {
+        "type": "Button",
+        "label": "Appointment",
+        "theme": "primary",
+        "url": "appointment"
+      }
+    ],
+    "styles": {
+      "self": {
+        "width": "narrow",
+        "padding": ["pt-5", "pb-5", "pr-4", "pl-4"]
+      }
+    }
+  },
+  "footer": {
+    "type": "FooterConfig",
+    "footerBody": "Footer",
+    "description": "Oasis Clinics, Egypt’s leader in patient experience, provides better care of the sick, investigates their problems, and furthers education of those whose sickness can be prevented.",
+    "footerLogo": [
+      {
+        "type": "Link",
+        "label": "Logo",
+        "altText": "Logo",
+        "url": "/images/logo.png"
+      }
+    ],
+    "icons": [
+      {
+        "type": "Link",
+        "label": "Facebook",
+        "altText": "Facebook",
+        "url": "/images/link-icon/facebook.svg"
+      },
+      {
+        "type": "Link",
+        "label": "Linkedin",
+        "altText": "Linkedin",
+        "url": "/images/link-icon/linkedin.svg"
+      },
+      {
+        "type": "Link",
+        "label": "Twitter",
+        "altText": "Twitter",
+        "url": "/images/link-icon/twitter.svg"
+      },
+      {
+        "type": "Link",
+        "label": "Youtube",
+        "altText": "Youtube",
+        "url": "/images/link-icon/youtube.svg"
+      }
+    ],
+    "listOneTitle": "Important Links",
+    "listOne": [
+      {
+        "type": "Link",
+        "label": "About Oasis Clinics",
+        "altText": "About Oasis Clinics",
+        "url": "/"
+      },
+      {
+        "type": "Link",
+        "label": "Clinics",
+        "altText": "Clinics",
+        "url": "/"
+      },
+      {
+        "type": "Link",
+        "label": "Doctors",
+        "altText": "Doctors",
+        "url": "/"
+      },
+      {
+        "type": "Link",
+        "label": "Health Tips",
+        "altText": "Health Tips",
+        "url": "/"
+      },
+      {
+        "type": "Link",
+        "label": "Contact Us",
+        "altText": "Contact Us",
+        "url": "/"
+      }
+    ],
+    "listTwoTitle": "Services",
+    "listTwo": [
+      {
+        "type": "Link",
+        "label": "Check Up Program",
+        "altText": "Check Up Program",
+        "url": "/"
+      },
+      {
+        "type": "Link",
+        "label": "Ultrasound Unit",
+        "altText": "Ultrasound Unit",
+        "url": "/"
+      },
+      {
+        "type": "Link",
+        "label": "Surgical Center",
+        "altText": "Surgical Center",
+        "url": "/"
+      },
+      {
+        "type": "Link",
+        "label": "Laboratory",
+        "altText": "Laboratory",
+        "url": "/"
+      },
+      {
+        "type": "Link",
+        "label": "Skin Laser Unitr",
+        "altText": "Skin Laser Unitr",
+        "url": "/"
+      }
+    ],
+    "listThreeTitle": "Contact us"
+  }
+}

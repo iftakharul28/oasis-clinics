@@ -1,0 +1,22 @@
+type: object
+name: HeroCard
+labelField: heading
+fields:
+  - type: string
+    name: heading
+    label: Heading
+    default: Heading
+  - type: string
+    name: headingIcon
+    label: Heading Icon
+  - type: string
+    name: subheading
+    label: Sub Heading
+    default: Card description goes here ...
+  - type: string
+    name: btnname
+    label: Button Name
+  - type: string
+    name: url
+    label: Button URL
+    default: '/'

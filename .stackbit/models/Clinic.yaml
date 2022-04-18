@@ -1,0 +1,10 @@
+type: object
+name: Clinic
+labelField: heading
+fields:
+  - type: string
+    name: title
+    label: Title
+  - type: string
+    name: img
+    label: Image Url

@@ -1,0 +1,23 @@
+type: object
+name: BlogSection
+label: Blog Section
+labelField: heading
+groups:
+  - sectionComponent
+fields:
+  - type: string
+    name: heading
+    label: Heading
+    default: MEET OUR DOCTORS
+  - type: list
+    name: BlogCard
+    items:
+      type: model
+      models: [BlogCard]
+  - type: string
+    name: btnname
+    label: Button Name
+    default: Book Appointment
+  - type: string
+    name: url
+    label: Button URL

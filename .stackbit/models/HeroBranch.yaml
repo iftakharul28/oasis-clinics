@@ -1,0 +1,15 @@
+type: object
+name: HeroBranch
+label: Hero Branch
+fields:
+  - type: string
+    name: heading
+    label: Heading
+  - type: string
+    name: subheading
+    label: Sub Heading
+  - type: list
+    name: buttons
+    items:
+      type: model
+      models: [Link]

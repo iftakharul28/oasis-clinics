@@ -1,0 +1,34 @@
+type: object
+name: HeaderConfig
+label: Header Config
+labelField: headerBody
+fields:
+  - type: list
+    name: headerLogo
+    label: Header Logo
+    items:
+      type: model
+      models:
+        - Link
+    default:
+      - type: Link
+        label: Image
+        altText: image
+        url: /
+  - type: list
+    name: primaryLinks
+    label: Primary navigation links
+    items:
+      type: model
+      models:
+        - Button
+        - Link
+    default:
+      - type: Link
+        label: Home
+        url: /
+        altText: Home
+      - type: Button
+        label: Blog
+        url: /
+        altText: Blog

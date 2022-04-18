@@ -1,0 +1,17 @@
+type: object
+name: ServiceSection
+label: Service Section
+groups:
+  - sectionComponent
+fields:
+  - type: string
+    name: heading
+    label: Heading
+  - type: string
+    name: img
+    label: Image
+  - type: list
+    name: ServiceCard
+    items:
+      type: model
+      models: [ServiceCard]

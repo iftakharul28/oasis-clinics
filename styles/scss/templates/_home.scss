@@ -1,0 +1,842 @@
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 470px;
+  position: relative;
+  @include tablet {
+    min-height: 670px;
+  }
+
+  &__pagination {
+    @include tablet {
+      position: absolute;
+      left: 45px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  &__heading {
+    font-size: $h2-md;
+    color: $white;
+    font-weight: 500;
+    margin: 0;
+    @include tablet {
+      font-size: $h1;
+    }
+  }
+
+  &__schedule {
+    font-size: $h4;
+    font-weight: normal;
+    color: $white;
+    margin: 0;
+    @include tablet {
+      font-size: $h3;
+    }
+  }
+
+  &__button {
+    margin: 0;
+  }
+
+  &__slider {
+    height: 470px;
+    @include tablet {
+      height: 670px;
+    }
+  }
+
+  &__slider-wrapper {
+    cursor: default;
+  }
+
+  &__slide-item {
+    color: $white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__slide {
+    max-width: 650px;
+  }
+}
+
+.arabic .hero__pagination {
+  right: 10px;
+}
+
+// swiper slider customize disign
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 3px !important;
+  border-radius: 2px !important;
+  background: $white !important;
+  opacity: 1 !important;
+  @include tablet {
+    width: 24px !important;
+    height: 2px !important;
+    background: linear-gradient(
+      to right,
+      $white 50%,
+      transparent 50%
+    ) !important;
+    transition: 0.4s !important;
+  }
+}
+
+.arabic .swiper-pagination-bullet {
+  background: linear-gradient(to right, transparent 50%, $white 50%) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $green !important;
+  @include tablet {
+    background: $white !important;
+  }
+}
+
+.arabic .swiper-pagination-bullet-active {
+  @include tablet {
+    background: $white !important;
+  }
+}
+
+// .arabic .hero__slide-item {
+//   opacity: 1 !important;
+// }
+
+// colorful boxes design
+.colorful-boxes {
+  .container {
+    padding-top: 45px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    @include tablet {
+      padding-top: 90px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      transform: translateY(50%);
+      padding: 0 40px;
+    }
+  }
+
+  &__cards {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__card {
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      grid-column: span 3;
+      padding: 35px 30px 37px;
+    }
+    &--green-dark {
+      background-color: #056136;
+    }
+    &--green-light {
+      background-color: #05693a;
+    }
+  }
+
+  &__button-wrap {
+    margin-top: auto;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__heading {
+    font-size: $h4;
+    font-weight: 500;
+    color: $white;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: normal;
+    color: $white;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+.home-about {
+  padding: 35px 0;
+  @include tablet {
+    padding: 70px 0;
+  }
+
+  &__heading {
+    font-size: $h3-md;
+    color: $primary-text;
+    font-weight: 600;
+    @include tablet {
+      font-size: 32px;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+    }
+  }
+
+  &__image-wrap {
+    @include tablet {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: $h4;
+    font-weight: 500;
+    color: $green;
+  }
+
+  &__button {
+    margin-top: 35px;
+  }
+}
+
+.home-services {
+  margin-bottom: 35px;
+  background-color: #f5f5f5;
+  position: relative;
+  padding: 35px 0;
+  @include tablet {
+    margin-bottom: 70px;
+    padding: 45px 0 100px;
+  }
+
+  &::before {
+    content: '';
+    display: none;
+    @include tablet {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      top: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(/images/home_services.webp);
+      z-index: 10;
+    }
+  }
+
+  &__heading {
+    font-size: $h3-md;
+    color: $primary-text;
+    font-weight: 600;
+    margin: 0;
+    @include tablet {
+      font-size: 32px;
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__cards {
+    @include tablet {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__image-wrap {
+    @include tablet {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__card {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    @include tablet {
+      flex-shrink: inherit;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__card-item {
+    margin-bottom: 50px;
+    @include tablet {
+      padding-right: 50px;
+      grid-column: span 6;
+      display: flex;
+      gap: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__card-image-wrap {
+    display: table;
+    margin: auto;
+    margin-top: 15px;
+    @include tablet {
+      display: block;
+      margin: inherit;
+      margin-top: 15px;
+    }
+  }
+
+  &__card-heading {
+    font-size: $h5;
+    font-weight: 500;
+    color: $green;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &__card-text {
+    font-size: 12px;
+    color: $primary-text;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(360deg);
+    @include tablet {
+      left: 28%;
+      transform: translateX(-28%) rotateZ(360deg);
+      padding-top: 51px;
+    }
+    .swiper-pagination-bullet {
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 50% !important;
+      background: #d6d6d6 !important;
+    }
+    .swiper-pagination-bullet-active {
+      background: $green !important;
+    }
+  }
+}
+
+.arabic .home-services::before {
+  left: 0 !important;
+  right: inherit !important;
+}
+
+.arabic .home-services__card-item {
+  padding-right: 0 !important;
+  padding-left: 45px !important;
+}
+
+.arabic .home-services__pagination {
+  @include tablet {
+    right: 15%;
+    transform: translateX(-15%) rotateZ(360deg);
+  }
+}
+
+.arabic .home-map__address-card--one {
+  border-left: 1px solid #33a977;
+}
+
+.arabic .home-map__address-card--three {
+  border-left: 1px solid #33a977;
+}
+
+.swiper1 {
+  @include tablet {
+    width: 50%;
+  }
+}
+
+.home-clinics {
+  margin: 35px 0;
+  background-color: $green;
+  position: relative;
+  overflow-x: hidden;
+  @include tablet {
+    margin: 70px 0;
+    overflow-x: visible;
+  }
+
+  &::before {
+    content: '';
+    display: none;
+    @include tablet {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      top: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-image: url(/images/home-clinics-bg.png);
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__text-wrap {
+    padding: 50px 0;
+    max-width: 360px;
+    @include tablet {
+      flex: 0 0 50%;
+      padding: 105px 0;
+    }
+  }
+
+  &__image-wrapper {
+    height: 153px;
+    width: 100%;
+  }
+
+  &__image-wrap {
+    @include tablet {
+      flex: 0 0 50%;
+      position: absolute;
+      width: 50%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: $white;
+      padding: 105px 0;
+    }
+  }
+
+  &__heading {
+    font-size: $h3-md;
+    color: $white;
+    font-weight: 600;
+    margin: 0;
+    @include tablet {
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $white;
+    opacity: 0.8;
+  }
+
+  &__button {
+    background-color: $white;
+    color: $green !important;
+    font-weight: 600 !important;
+    margin-top: 25px;
+  }
+
+  &__slider {
+    width: 80%;
+    @include tablet {
+      position: absolute;
+      width: 130%;
+      right: 0;
+      top: 47px;
+      background: transparent !important;
+      overflow: hidden;
+    }
+    @media (min-width: 1600px) {
+      width: 125%;
+    }
+    @media (min-width: 1870px) {
+      width: 120%;
+    }
+  }
+
+  &__cards {
+    position: relative;
+    z-index: 1000;
+    @include tablet {
+      position: absolute;
+    }
+  }
+
+  &__card {
+    height: 243px !important;
+  }
+}
+
+.arabic .home-clinics__content {
+  justify-content: flex-end;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 80% !important;
+  color: $white !important;
+  height: 24px !important;
+  width: 12px !important;
+}
+
+.swiper-button-prev {
+  left: -190px !important;
+}
+
+.swiper-button-next {
+  left: -95px !important;
+  right: inherit !important;
+}
+
+.covid {
+  padding: 70px 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include tablet {
+    min-height: 650px;
+    padding: 0;
+  }
+
+  &__content {
+    width: 100%;
+    @include tablet {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__text-wrap {
+    @include tablet {
+      flex: 0 0 49%;
+    }
+  }
+
+  &__bg-image {
+    @include tablet {
+      min-height: 650px;
+      background-image: url(/images/covid-icon.webp);
+      flex: 0 0 49%;
+    }
+  }
+
+  &__text {
+    color: $white;
+    @include tablet {
+      max-width: 486px;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    margin-top: 50px;
+  }
+}
+
+.meet-doctors {
+  padding: 35px 0;
+  @include tablet {
+    padding: 70px 0;
+  }
+
+  &__heading {
+    font-size: 26px;
+    margin-bottom: 35px;
+    text-align: center;
+    @include tablet {
+      font-size: 32px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__button {
+    display: table;
+    margin: 35px auto 0 auto;
+    @include tablet {
+      margin: 55px auto 0 auto;
+    }
+  }
+}
+
+.doctor-cards {
+  padding: 30px 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+.doctor-card {
+  max-width: 335px;
+  padding: 25px 35px;
+  background: #fff;
+  box-shadow: 0 8px 50px rgba(5, 104, 57, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  @include tablet {
+    margin-bottom: 0;
+    width: 285px;
+  }
+  &:hover {
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(5, 104, 57, 0.1);
+  }
+  &:hover .doctor-card__button-wrapper {
+    max-height: 80px;
+    padding-bottom: 25px;
+    padding-top: 5px;
+  }
+  &__image-wrapper {
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+  }
+  &__image {
+    height: 100%;
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 4px 10px #05683930);
+  }
+  &__title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #011a0e;
+  }
+  &__details {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgba(1, 26, 14, 0.7);
+  }
+  &__location {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: #056839;
+    display: inline-block;
+    text-align: center;
+  }
+  &__button-wrapper {
+    max-height: 0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(5, 104, 57, 0.1);
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    .button {
+      font-size: 14px;
+      padding: 11px 25px;
+      color: #fff !important;
+      background-color: #056839;
+      border: none;
+      border-radius: 4px;
+      text-transform: capitalize;
+      display: inline-block;
+      text-decoration: none !important;
+    }
+  }
+}
+.home-map {
+  overflow: hidden;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__frame-wrap {
+    margin: -2px 0 0 -2px;
+    height: 300px;
+    @include tablet {
+      flex: 0 0 50%;
+      height: inherit;
+    }
+  }
+
+  &__frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__details {
+    cursor: pointer;
+    background-color: $green;
+    @include tablet {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__address-cards {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__address-card {
+    padding: 50px 20px;
+    border-bottom: 1px solid #33a977;
+    @include tablet {
+      grid-column: span 6;
+      padding: 62px 42px;
+      border: 1px solid #33a977;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--one {
+      @include tablet {
+        grid-column: span 12;
+        border-bottom: none;
+        border-left: none;
+      }
+    }
+    &--two {
+      @include tablet {
+        border-bottom: none;
+        border-right: none;
+      }
+    }
+    &--three {
+      @include tablet {
+        border-bottom: none;
+        border-right: none;
+      }
+    }
+    &--four {
+      @include tablet {
+        border-bottom: none;
+        border-right: none;
+      }
+    }
+  }
+
+  &__address-heading {
+    text-align: center;
+    color: $white;
+    font-weight: 500;
+    font-size: $h4;
+  }
+
+  &__address {
+    text-align: center;
+    color: $white;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 12px;
+    max-width: 276px;
+    margin-left: auto;
+    margin-right: auto;
+    &--long {
+      max-width: 325px;
+    }
+  }
+  &__telephone {
+    max-width: 325px;
+    margin: auto;
+    text-align: center;
+    color: beige;
+    direction: ltr;
+    span {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background-color: beige;
+      border-radius: 50%;
+      margin-bottom: 2px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+  &__tel {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+  }
+}
+
+.successfull-container {
+  min-height: calc(100vh - 504px);
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.successfull-message {
+  color: rgba($green, 1);
+  font-size: 24px;
+  text-align: center;
+  @include tablet {
+    font-size: 40px;
+  }
+}
+.back-to-home {
+  display: inline-block;
+  text-align: center;
+}

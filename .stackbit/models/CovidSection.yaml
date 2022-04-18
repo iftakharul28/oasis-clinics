@@ -1,0 +1,22 @@
+type: object
+name: CovidSection
+label: Covid Section
+groups:
+  - sectionComponent
+fields:
+  - type: markdown
+    name: text
+    label: About
+  - type: string
+    name: imgone
+    label: Background Image
+  - type: string
+    name: imgtwo
+    label: Image
+  - type: string
+    name: btnname
+    label: Button Name
+  - type: string
+    name: url
+    label: Button URL
+    default: '/'

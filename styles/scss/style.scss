@@ -1,0 +1,30 @@
+// Color Variables
+$white: #ffffff;
+$black: #000000;
+$light: #fafafa;
+$primary-color: #056839;
+$secondary-color: #7fbc03;
+$primary-text: #011a0e;
+$secondary-text: #999999;
+$green: #056839;
+
+$primary-font: 'Montserrat', sans-serif;
+
+// Font Variables
+$h1: 48px;
+$h1-md: 38px;
+$h2: 38px;
+$h2-md: 30px;
+$h3: 22px;
+$h3-md: 20px;
+$h4: 18px;
+$h5: 16px;
+$h6: 15px;
+
+@import 'mixins';
+@import 'typography';
+@import 'buttons';
+@import 'common';
+@import 'templates/header.scss';
+@import 'templates/footer.scss';
+@import 'templates/home.scss';

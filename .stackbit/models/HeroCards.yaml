@@ -1,0 +1,11 @@
+type: object
+name: HeroCards
+label: Hero Cards
+groups:
+  - sectionComponent
+fields:
+  - type: list
+    name: HeroCard
+    items:
+      type: model
+      models: [HeroCard]

@@ -1,0 +1,15 @@
+type: object
+name: ServiceCard
+labelField: heading
+fields:
+  - type: string
+    name: heading
+    label: Heading
+    default: Heading
+  - type: string
+    name: headingIcon
+    label: Heading Icon
+  - type: string
+    name: subheading
+    label: Sub Heading
+    default: Card description goes here ...
