@@ -67,6 +67,23 @@ sections:
           investigations with portable medical devices
         btnname: More Info
         url: /
+  - type: AboutSection
+    heading: Who We Are
+    subheading: About Oasis Clinics
+    text: >
+      Oasis Clinics is a medical group practice specializing in outpatient and
+      inpatient daycare health services. It is a one-of-a-kind polyclinic wholly
+      devoted to outpatient services, GIT, endoscopies and inpatient surgical
+      procedures. Oasis Clinics provides a range of integrated medical services
+      designed to provide holistic treatment for the whole family in a positive
+      and comfortable environment that adheres to the universal infection
+      control standards. With over 30 specialties in one state-of-the-art, easy
+      to reach location, Oasis Clinics is the premier supplier of quality
+      medicine in the Cairo West suburbs of Sheikh Zayed, Sixth of October, the
+      North Coast (Diplo), New Maadi, and New Cairo.
+    btnname: Read More
+    url: /
+    img: /images/about-oasis-clinics.webp
   - type: ServiceSection
     heading: Specialized Services
     img: /images/home_services.webp
@@ -98,23 +115,6 @@ sections:
           Electrophysiology (heart rhythm irregularities), Electrocardiography
           (ECG), Echocardiography & vascular duplex, Treadmill test, Home 24 hr
           ECG (Holter) & blood pressure recording.
-  - type: AboutSection
-    heading: Who We Are
-    subheading: About Oasis Clinics
-    text: >
-      Oasis Clinics is a medical group practice specializing in outpatient and
-      inpatient daycare health services. It is a one-of-a-kind polyclinic wholly
-      devoted to outpatient services, GIT, endoscopies and inpatient surgical
-      procedures. Oasis Clinics provides a range of integrated medical services
-      designed to provide holistic treatment for the whole family in a positive
-      and comfortable environment that adheres to the universal infection
-      control standards. With over 30 specialties in one state-of-the-art, easy
-      to reach location, Oasis Clinics is the premier supplier of quality
-      medicine in the Cairo West suburbs of Sheikh Zayed, Sixth of October, the
-      North Coast (Diplo), New Maadi, and New Cairo.
-    btnname: Read More
-    url: /
-    img: /images/about-oasis-clinics.webp
   - type: OurClinic
     heading: Our Clinics
     text: |
@@ -126,11 +126,32 @@ sections:
     url: /show
     Clinic:
       - type: Clinic
-        img: lorem-ipsum
-        title: Homeopathy / Alternative Medicine
+        img: /images/clinics/Cardiothoracic-Surgery.jpg
+        title: Cardiothoracic Surgery
       - type: Clinic
         title: Neuro Surgery
-        img: lorem-ipsum
+        img: /images/clinics/about-founders-vision.png
+      - type: Clinic
+        title: andrology
+        img: /images/clinics/andrology.jpg
+      - type: Clinic
+        title: Audiology & Phoniatric
+        img: /images/clinics/Audiology & Phoniatric.jpg
+      - type: Clinic
+        title: audiology phoniatrics
+        img: /images/clinics/audiology-phoniatrics.png
+      - type: Clinic
+        title: balancing nutrition
+        img: /images/clinics/balancing nutrition.png
+      - type: Clinic
+        title: Check Up Program
+        img: /images/clinics/Check-Up Program.jpg
+      - type: Clinic
+        title: Neuro Surgery
+        img: /images/clinics/Cardiothoracic-Surgery.jpg
+      - type: Clinic
+        title: Dermatology Lasers
+        img: /images/clinics/Dermatology-Lasers.png
   - type: CovidSection
     text: |
       Health and wellness are not just trending topics, but central to 

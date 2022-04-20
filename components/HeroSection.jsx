@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { toFieldPath, pickDataAttrs } from '@stackbit/annotations';
-import Markdown from 'markdown-to-jsx';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Autoplay, Pagination } from 'swiper';
+import 'swiper/css/effect-creative';
+import { Autoplay, Pagination, EffectCreative } from 'swiper';
 export const HeroSection = (props) => {
   return (
     <section
@@ -14,7 +14,7 @@ export const HeroSection = (props) => {
         backgroundImage: 'url(' + props.img + ')',
       }}
     >
-      <div className="container">
+      <div className="container" {...pickDataAttrs(props)}>
         <Swiper
           slidesPerView={1}
           direction={'vertical'}
@@ -30,14 +30,13 @@ export const HeroSection = (props) => {
             el: '.swiper-pagination',
             type: 'bullets',
           }}
+          effect={'creative'}
           creativeEffect={{
             prev: {
-              // will set `translateZ(-400px)` on previous slides
               translate: ['100%', 0, '100%'],
               opacity: 0,
             },
             next: {
-              // will set `translateX(100%)` on next slides
               translate: ['-100%', 0, 0],
             },
           }}
@@ -63,13 +62,10 @@ export const HeroSection = (props) => {
               },
             },
           }}
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay, Pagination, EffectCreative]}
           className="hero__slider"
         >
-          <div
-            {...pickDataAttrs(props)}
-            className="swiper-wrapper hero__slider-wrapper"
-          >
+          <div className="hero__slider-wrapper">
             {props.HeroBranch.map((item, index) => (
               <SwiperSlide key={index} className="hero__slide-item">
                 <div
@@ -98,9 +94,7 @@ export const HeroSection = (props) => {
           </div>
         </Swiper>
       </div>
-
       <div className="hero__pagination">
-        {/* If we need pagination  */}
         <div className="swiper-pagination"></div>
       </div>
     </section>

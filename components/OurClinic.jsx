@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { toFieldPath, pickDataAttrs } from '@stackbit/annotations';
 import Markdown from 'markdown-to-jsx';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper';
 
 export const OurClinic = (props) => {
   return (
@@ -23,16 +26,37 @@ export const OurClinic = (props) => {
             </a>
           </div>
           <div className="home-clinics__image-wrap">
-            <div className="home-clinics__slider swiper2">
-              <div className="home-clinics__cards swiper-wrapper">
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={20}
+              direction={'horizontal'}
+              speed={500}
+              loop={false}
+              allowTouchMove={true}
+              navigation={{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                },
+                1060: {
+                  slidesPerView: 3,
+                },
+              }}
+              modules={[Navigation]}
+              className="home-clinics__slider"
+            >
+              <div className="home-clinics__cards">
                 {props.Clinic.map((item, index) => (
-                  <div
+                  <SwiperSlide
+                    {...toFieldPath(`.Clinic.${index}`)}
                     key={index}
-                    className="clinics-card home-clinics__card swiper-slide"
+                    className="clinics-card home-clinics__card"
                   >
                     <div className="home-clinics__image-wrapper">
                       <img
-                        {...toFieldPath('.img')}
                         className="clinics-card__image"
                         src={item.img}
                         alt={item.title}
@@ -41,10 +65,10 @@ export const OurClinic = (props) => {
                     <h2 className="clinics-card__title home-clinics__card-title">
                       {item.title}
                     </h2>
-                  </div>
+                  </SwiperSlide>
                 ))}
               </div>
-            </div>
+            </Swiper>
             <div className="home-clinics__navigation">
               <div className="swiper-button-prev"></div>
               <div className="swiper-button-next"></div>

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { toFieldPath, pickDataAttrs } from '@stackbit/annotations';
-import Markdown from 'markdown-to-jsx';
 
 export const ServiceSection = (props) => {
   return (

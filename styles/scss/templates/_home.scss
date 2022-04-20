@@ -476,7 +476,7 @@
   &__slider {
     width: 80%;
     @include tablet {
-      position: absolute;
+      position: absolute !important;
       width: 130%;
       right: 0;
       top: 47px;
@@ -503,7 +503,31 @@
     height: 243px !important;
   }
 }
-
+.clinics-card {
+  width: 335px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.clinics-card__image {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+  filter: drop-shadow(0 4px 10px #05683930);
+}
+.clinics-card__title {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  color: #011a0e;
+}
 .arabic .home-clinics__content {
   justify-content: flex-end;
 }
