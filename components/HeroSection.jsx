@@ -37,7 +37,7 @@ export const HeroSection = (props) => {
               opacity: 0,
             },
             next: {
-              translate: ['-100%', 0, 0],
+              translate: ['100%', 0, 0],
             },
           }}
           breakpoints={{
