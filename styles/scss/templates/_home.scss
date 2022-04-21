@@ -595,7 +595,6 @@
   &__bg-image {
     @include tablet {
       min-height: 650px;
-      background-image: url(/images/covid-icon.webp);
       flex: 0 0 49%;
     }
   }

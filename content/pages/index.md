@@ -162,7 +162,7 @@ sections:
       appearing on social media and in mainstream press we simplify what lies 
       behind the scenes from our most trusted sources.
     imgone: /images/covid-bg.webp
-    imgtwo: /images/home-clinics-bg.png
+    imgtwo: /images/home-clinics-bg.webp
     btnname: Read More
     url: /
   - type: BlogSection
