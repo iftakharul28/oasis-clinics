@@ -3,24 +3,30 @@ import dynamic from 'next/dynamic';
 const componentsMap = {
   // sections
   HeroSection: dynamic(() =>
-    namedComponent(import('./HeroSection'), 'HeroSection')
+    namedComponent(import('./HeroSection'), 'HeroSection', { ssr: false })
   ),
-  HeroCards: dynamic(() => namedComponent(import('./HeroCards'), 'HeroCards')),
+  HeroCards: dynamic(() =>
+    namedComponent(import('./HeroCards'), 'HeroCards', { ssr: false })
+  ),
   AboutSection: dynamic(() =>
-    namedComponent(import('./AboutSection'), 'AboutSection')
+    namedComponent(import('./AboutSection'), 'AboutSection', { ssr: false })
   ),
   ServiceSection: dynamic(() =>
-    namedComponent(import('./ServiceSection'), 'ServiceSection')
+    namedComponent(import('./ServiceSection'), 'ServiceSection', { ssr: false })
   ),
-  OurClinic: dynamic(() => namedComponent(import('./OurClinic'), 'OurClinic')),
+  OurClinic: dynamic(() =>
+    namedComponent(import('./OurClinic'), 'OurClinic', { ssr: false })
+  ),
   CovidSection: dynamic(() =>
-    namedComponent(import('./CovidSection'), 'CovidSection')
+    namedComponent(import('./CovidSection'), 'CovidSection', { ssr: false })
   ),
   BlogSection: dynamic(() =>
-    namedComponent(import('./BlogSection'), 'BlogSection')
+    namedComponent(import('./BlogSection'), 'BlogSection', { ssr: false })
   ),
   CardGridSection: dynamic(() =>
-    namedComponent(import('./CardGridSection'), 'CardGridSection')
+    namedComponent(import('./CardGridSection'), 'CardGridSection', {
+      ssr: false,
+    })
   ),
 };
 

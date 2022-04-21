@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { toFieldPath, pickDataAttrs } from '@stackbit/annotations';
 import Markdown from 'markdown-to-jsx';
+import Image from 'next/image';
 
 export const AboutSection = (props) => {
   return (
@@ -11,11 +12,12 @@ export const AboutSection = (props) => {
         </h2>
         <div className="home-about__content">
           <div className="home-about__image-wrap">
-            <img
+            <Image
               {...toFieldPath('.img')}
               className="home-about__image"
-              src={props.img}
               alt={props.subheading}
+              src={props.img}
+              layout="fill"
             />
           </div>
           <div className="home-about__text-wrap">

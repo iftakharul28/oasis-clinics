@@ -108,6 +108,7 @@ export const Header = ({ primaryLinks, headerLogo }) => {
               }
               href={url}
               aria-label={altText}
+              key={index}
               data-sb-field-path={annotations.join(' ').trim()}
             >
               {label && <span>{label}</span>}

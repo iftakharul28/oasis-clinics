@@ -11,9 +11,9 @@ export const Footer = ({
   listThreeTitle,
   listThree,
 }) => {
-  const [click1, setClick1] = useState(false);
-  const [click2, setClick2] = useState(false);
-  const [click3, setClick3] = useState(false);
+  const [click, setClick] = useState(false);
+  // const [click2, setClick2] = useState(false);
+  // const [click3, setClick3] = useState(false);
   return (
     <footer
       data-sb-field-path="content/data/config.json:footer"
@@ -71,7 +71,7 @@ export const Footer = ({
             })}
           </ul>
         </div>
-        <div className="footer__links" onClick={() => setClick1(!click1)}>
+        <div className="footer__links" onClick={() => setClick(!click)}>
           <p className="footer__links-title">
             <span>{listOneTitle}</span>
             <svg
@@ -92,7 +92,7 @@ export const Footer = ({
           </p>
           <ul
             className={
-              click1
+              !click
                 ? 'footer__links-wrapper footer__links-wrapper--open'
                 : 'footer__links-wrapper'
             }
@@ -108,7 +108,7 @@ export const Footer = ({
             })}
           </ul>
         </div>
-        <div className="footer__links" onClick={() => setClick2(!click2)}>
+        <div className="footer__links" onClick={() => setClick(!click)}>
           <p className="footer__links-title">
             <span>{listTwoTitle}</span>
             <svg
@@ -129,7 +129,7 @@ export const Footer = ({
           </p>
           <ul
             className={
-              click2
+              !click
                 ? 'footer__links-wrapper footer__links-wrapper--open'
                 : 'footer__links-wrapper'
             }
@@ -145,7 +145,7 @@ export const Footer = ({
             })}
           </ul>
         </div>
-        <div className="footer__links" onClick={() => setClick3(!click3)}>
+        <div className="footer__links" onClick={() => setClick(!click)}>
           <p className="footer__links-title">
             <span>{listThreeTitle}</span>
             <svg
@@ -166,7 +166,7 @@ export const Footer = ({
           </p>
           <div
             className={
-              click3
+              !click
                 ? 'footer__links-wrapper footer__links-wrapper--open'
                 : 'footer__links-wrapper'
             }

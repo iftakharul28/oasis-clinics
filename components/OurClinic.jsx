@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Image from 'next/image';
 import { toFieldPath, pickDataAttrs } from '@stackbit/annotations';
 import Markdown from 'markdown-to-jsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,8 +7,9 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper';
 
 export const OurClinic = (props) => {
+  const lazyRoot = React.useRef(null);
   return (
-    <section {...pickDataAttrs(props)} className="home-clinics">
+    <section ref={lazyRoot} {...pickDataAttrs(props)} className="home-clinics">
       <div className="container">
         <div className="home-clinics__content">
           <div className="home-clinics__text-wrap">
@@ -25,7 +27,7 @@ export const OurClinic = (props) => {
               {props.btnname}
             </a>
           </div>
-          <div className="home-clinics__image-wrap">
+          <div lazyRoot={lazyRoot} className="home-clinics__image-wrap">
             <Swiper
               slidesPerView={1}
               spaceBetween={20}
@@ -56,10 +58,11 @@ export const OurClinic = (props) => {
                     className="clinics-card home-clinics__card"
                   >
                     <div className="home-clinics__image-wrapper">
-                      <img
+                      <Image
+                        alt={item.title}
                         className="clinics-card__image"
                         src={item.img}
-                        alt={item.title}
+                        layout="fill"
                       />
                     </div>
                     <h2 className="clinics-card__title home-clinics__card-title">

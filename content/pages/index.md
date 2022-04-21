@@ -1,6 +1,6 @@
 ---
 layout: Page
-title: Stackbit Next.js Starter
+title: oasis clinics
 sections:
   - type: HeroSection
     img: /images/home-hero-bg.webp

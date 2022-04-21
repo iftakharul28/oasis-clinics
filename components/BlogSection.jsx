@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Image from 'next/image';
 import { toFieldPath, pickDataAttrs } from '@stackbit/annotations';
 
 export const BlogSection = (props) => {
@@ -17,10 +18,11 @@ export const BlogSection = (props) => {
                 className="doctor-card"
               >
                 <div className="doctor-card__image-wrapper">
-                  <img
+                  <Image
+                    alt={item.name}
                     {...toFieldPath('.image')}
                     src={item.image}
-                    alt={item.name}
+                    layout="fill"
                     className="doctor-card__image"
                   />
                 </div>
